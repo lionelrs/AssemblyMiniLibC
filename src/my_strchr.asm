@@ -17,6 +17,7 @@ find_char:
     inc rcx
     jmp find_char
 
+
 found:
     add rax, rcx
     ret
