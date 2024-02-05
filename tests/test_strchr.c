@@ -5,11 +5,11 @@
 void test_strchr()
 {
     const char* s = "Hello, world!";
-    int charsToTest[] = { 'H', 'w', '!', 'x', 0 }; // Test cases including the null terminator
+    int charsToTest[] = { 'H', 'w', '!', 'x', 'f', 0 }; // Test cases including the null terminator
     char *result, *expected;
     int i;
 
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 6; i++) {
         int c = charsToTest[i];
 
         expected = strchr(s, c);
